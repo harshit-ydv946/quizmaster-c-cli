@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main() {
+  int score = 0;
+  int ans;
+
+  printf("\n=========================================\n");
+  printf("       QUIZMASTER - CS TECH ASSESSMENT   \n");
+  printf("=========================================\n\n");
+
+  // Question 1
+  printf("Q1. Which data structure uses LIFO principle?\n");
+  printf("1. Queue\n2. Stack\n3. Linked List\n4. Binary Tree\n");
+  printf("Enter option (1-4): ");
+  scanf("%d", &ans);
+  if (ans == 2) {
+    printf("Correct!\n\n");
+    score++;
+  } else {
+    printf("Wrong! Correct answer is 2 (Stack).\n\n");
+  }
+
+  // Question 2
+  printf("Q2. What does HTML stand for?\n");
+  printf(
+      "1. Hyper Text Markup Language\n2. High Tech Modern Language\n3. Hyper "
+      "Transfer Markup Logic\n4. Home Tool Markup Language\n");
+  printf("Enter option (1-4): ");
+  scanf("%d", &ans);
+  if (ans == 1) {
+    printf("Correct!\n\n");
+    score++;
+  } else {
+    printf("Wrong! Correct answer is 1 (Hyper Text Markup Language).\n\n");
+  }
+
+  // Question 3
+  printf("Q3. Which complexity represents Binary Search in worst case?\n");
+  printf("1. O(n)\n2. O(n^2)\n3. O(log n)\n4. O(1)\n");
+  printf("Enter option (1-4): ");
+  scanf("%d", &ans);
+  if (ans == 3) {
+    printf("Correct!\n\n");
+    score++;
+  } else {
+    printf("Wrong! Correct answer is 3 (O(log n)).\n\n");
+  }
+
+  // Final Summary
+  printf("=========================================\n");
+  printf("          QUIZ COMPLETED                 \n");
+  printf("=========================================\n");
+  printf("Your Final Score: %d out of 3\n", score);
+  printf("Percentage: %.1f%%\n", ((float)score / 3) * 100);
+  printf("=========================================\n");
+
+  return 0;
+}
